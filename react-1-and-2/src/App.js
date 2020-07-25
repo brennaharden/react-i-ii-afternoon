@@ -31,12 +31,14 @@ class App extends React.Component {
       <header>
         <h3>Home</h3>
       </header>
+      <div className="container">
       <Card className="card"
           employees={this.state.data}
           index={this.state.index}/>
       <Nav className="nav"
           nextChange={this.increaseChange}
           previousChange={this.decreaseChange}/>
+      </div>
 
     </div>
   );

@@ -4,10 +4,13 @@ const Nav = props => {
     
     return (
         <div className="nav">
-            <div>
-                <button onClick={props.previousChange}>{'< Previous'}</button>
-                <button onClick={props.nextChange}>{'Next >'}</button>
-            </div>
+                <h4 onClick={props.previousChange}>{'< Previous'}</h4>
+                <div className="dummies">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    <button>New</button>
+                </div>
+                <h4 onClick={props.nextChange}>{'Next >'}</h4>
         </div>
     )
 }
